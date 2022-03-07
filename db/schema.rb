@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2022_03_07_155844) do
   create_table "entries", force: :cascade do |t|
     t.string "date"
     t.string "emotion"
-    t.string "entry"
+    t.string "note"
     t.integer "user_id"
     t.index ["user_id"], name: "index_entries_on_user_id"
   end

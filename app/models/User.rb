@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-    has_many :emotions
+    has_many :entries
 end
