@@ -35,6 +35,13 @@ class ApplicationController < Sinatra::Base
     delete_entry.to_json
   end
 
+  #gets all Users
+  get "/users" do
+    all_users = User.all
+    all_users.to_json
+
+  end
+
 
   
 end
