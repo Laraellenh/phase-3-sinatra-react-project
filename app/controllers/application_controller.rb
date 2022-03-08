@@ -11,15 +11,14 @@ class ApplicationController < Sinatra::Base
   post '/entries' do 
     
     new_entry = Entry.create(
-     date: params[:score]
-     emotion: params[:emotion]
-     note: params[:note]
+     date: params[:date],
+     emotion: params[:emotion],
+     note: params[:note],
      user_id: params[:user_id]
-   )
+    )
 
     new_entry.to_json
   end
-
 
 
   #gets all entries
