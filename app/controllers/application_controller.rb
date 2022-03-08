@@ -4,10 +4,13 @@ class ApplicationController < Sinatra::Base
   # Add your routes here
 
   #gets all entries
-  get "/entries/:id" do
+  get "/entries" do
     all_entries = Entry.all
     all_entries.to_json
   end
+
+  
+
 
   
 end
