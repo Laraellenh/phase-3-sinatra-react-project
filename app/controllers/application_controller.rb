@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
      date: params[:date],
      emotion: params[:emotion],
      note: params[:note],
-     user_id: params[:user_id]
+     user_id: 1
     )
 
     new_entry.to_json
